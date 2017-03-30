@@ -2,7 +2,6 @@ require 'torch'
 require 'nn'
 require 'image'
 require 'optim'
-
 require 'loadcaffe'
 require 'libcuda_utils'
 
@@ -11,7 +10,6 @@ require 'cunn'
 
 local matio = require 'matio'
 local cmd = torch.CmdLine()
-
 -- Basic options
 cmd:option('-style_image', 'examples/inputs/seated-nude.jpg', 'Style target image')
 cmd:option('-content_image', 'examples/inputs/tubingen.jpg','Content target image')
